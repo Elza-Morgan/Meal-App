@@ -1,0 +1,9 @@
+<div class="container">
+
+    <h1 class="title">Learn, Cook, Eat Your Food</h1>
+
+    <app-mealtabs (selectCat)="handleSelectedCat($event)"/>
+
+    <app-mealcards [cat]="currentCat"/>
+    
+</div>

@@ -1,0 +1,21 @@
+<div>
+    <div class="cards">
+        @for(meal of mealsByCategory; track meal.idMeal) {
+            <div class="card">
+                <div class="card-image">
+                    <img src={{meal.strMealThumb}}/>
+                </div>
+                <div class="card-content">
+                    <p class="card-content-name">{{meal.strMeal.split(" ").slice(0,2).join(" ")}}</p>
+                    <div class="card-content-location" *ngIf="meal.strArea">
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="location-text">{{ meal.strArea }}</span>
+                    </div>
+                </div>
+                <button class="card-button">
+                    View Recipe
+                </button>
+            </div>
+        }
+    </div>
+</div>

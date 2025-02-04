@@ -1,0 +1,15 @@
+<ul class="tabs">
+
+    <li class="catego active">
+        <a href="" (click)="onCategoryClick($event,'All')">All</a>
+    </li>
+
+    @for(cat of mealsCat; track cat.idCategory){
+
+        <li class="catego">
+            <a href="#" (click)="onCategoryClick($event, cat.strCategory)">{{cat.strCategory}}</a>
+        </li>
+    }
+
+
+</ul>

@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 83%;
+    left: 17%;
+    overflow: hidden;
+    min-height: 75vh;
+    background-color: #f4f2ee;
+    .title{
+        font-family:"Pacifico", cursive;
+        font-size: 36px;
+        line-height: 40px;
+        font-family: 700;
+        padding: 70px 0px 30px 70px;
+        background: linear-gradient(to right,#F29724,#ca1023c4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

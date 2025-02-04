@@ -1,0 +1,88 @@
+@use "../../variables" as *;
+
+.sidebar{
+    height: 100vh;
+    width: 17%;
+    position: fixed;  
+    z-index: 1;
+    // background-color:aquamarine;
+    background-color: #f9fafb;
+    // box-shadow: 0px 10px 15px rgb(0, 0,0,0.1);
+
+
+    img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    .btn-content{
+        font-size: 18px;
+        font-family: $main-font-family;
+        font-weight: 500;
+        line-height: 28px;
+        color: black;
+        list-style: none;
+       
+    }
+
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a{
+            text-decoration: none;
+        }
+
+        .btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            width: 80%;
+            border: 1px solid #dbdee3;
+            transition: all 0.2s ease-in-out;
+            span{
+                @extend .btn-content;
+            }
+            svg{
+                @extend .btn-content;
+                margin-left: 20px;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: none;
+            }
+        }
+
+        .active{
+            border: 2px solid #f29724;
+            background-color: #f29724;
+            box-shadow: 0px 10px 15px rgb(252, 196, 136);
+            transition: all 0.1s ease-in-out;
+        }
+
+        .active svg{
+            border: 2px solid #f29724;
+            background-color: #f29724;
+            color: white;
+        }
+
+        .active span{
+            border: 2px solid #f29724;
+            background-color: #f29724;
+            color: white;
+            font-weight: 600;
+
+        }
+    }
+}
+
+

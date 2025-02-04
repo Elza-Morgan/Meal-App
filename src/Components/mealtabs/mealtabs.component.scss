@@ -1,0 +1,54 @@
+@use "../../variables" as *;
+
+ 
+ul{
+    margin: 0px 0px 70px 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 20px;
+    width: 75%;
+    // background-color: teal;
+
+    li{
+        width: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgb(0, 0, 0,0.6);
+        transition: all 0.5s ease-in-out;
+        border: 1px solid $fourth-color;
+        box-shadow: none;
+        background-color: transparent;
+
+        &:hover {
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: $secondary-color;
+        }
+
+        a{
+            text-decoration: none;
+            font-family:$main-font-family;
+            line-height: 24px;
+            font-weight: 500;
+            color: $fourth-color;
+        }
+
+
+    }
+
+    .active{
+        background-color: $main-color;
+        &:hover{
+            background-color:$main-color;
+        }
+        a{
+            color: $secondary-color;
+        }
+    }
+    
+}
+
+
+
+ 
